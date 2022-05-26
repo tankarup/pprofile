@@ -7,7 +7,13 @@ window.onload = function () {
 }
 
 function load_data(){
-	data = JSON.parse(localStorage.getItem('mirishita_producer_profile'));
+	const profile = localStorage.getItem('mirishita_producer_profile');
+	if (profile) {
+		data = JSON.parse(profile);
+	} else {
+		data = {};
+	}
+	
 
 }
 function getData(id, element){
