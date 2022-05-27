@@ -118,11 +118,12 @@ function init(){
 		}
 
 		content += `
-<div class="item col col-12 col-sm-6 col-lg-4 bg-light border border-secondary">
-	<h2 class="h5">
+<div class="item col col-12 col-sm-6 col-lg-4">
+<div class="border border-info" style="border-radius: 5px; margin: 2px; padding:2px;">
+	<h2 class="h6">
 		${item.question}
 		<span
-			style="font-size: small; cursor: pointer;"
+			style="font-size: x-small; cursor: pointer;"
 			onclick="edit('${item.id}')"
 			>
 			🖊️
@@ -157,6 +158,7 @@ function init(){
 			</span>
 		</div>
 	</div>
+</div>
 </div>
 		`;
 	}
